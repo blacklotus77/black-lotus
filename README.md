@@ -1,2 +1,2 @@
-# Black-Lotus-Collective
-Cyber Security Collective.
+# Black-Lotus
+Security Group.
