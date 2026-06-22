@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">                                  <head>                                                <meta charset="UTF-8">                            <meta name="viewport" content="width=device-width, initial-scale=1.0">                              <title>Black Lotus</title>
-    <link rel="stylesheet" href="style.css?v=4">      <link rel="preconnect" href="https://fonts.googleapis.com">                                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-</head>                                           <body>
-    <div class="scanline"></div>                      <header>
+<!DOCTYPE html>                                   <html lang="en">
+<head>                                                <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Lotus</title>                        <link rel="stylesheet" href="style.css?v=11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">    </head>
+<body>                                                <div class="scanline"></div>
+    <header>
         <div class="logo">
             <img src="BLC.jpg?v=4" alt="Black Lotus">
             <h1>BLACK LOTUS</h1>
@@ -10,6 +14,7 @@
         <nav>
             <a href="#services">Services</a>
             <a href="#tools">Tools</a>
+            <a href="#about">About</a>
             <a href="#standards">Standards</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -23,51 +28,67 @@
 
         <section id="services">
             <h2>SERVICES</h2>
+            <p class="minimal-line">Nothing wasted. Nothing exposed. Privacy is our interface.</p>
             <div class="grid">
                 <div class="card">
                     <span class="badge badge-live">LIVE NOW</span>
-                    <h3>Offensive Operations</h3>
-                    <p>Authorized pentesting and network assessments. We attack your systems like adversaries do, legally. Web apps, APIs, external perimeter.</p>
+                    <h3>Red Team Ops</h3>
+                    <p class="summary">Adversary emulation under strict authorization.</p>
+                    <p class="detail">We operate like real threat actors to test your defenses. Full scope, controlled execution, clear reporting.</p>
                 </div>
                 <div class="card">
                     <span class="badge badge-live">LIVE NOW</span>
                     <h3>Security Assessments</h3>
-                    <p>Web app testing, 48hr log hunts with LogWatch, domain exposure scans with SecCheck. Find what scanners miss.</p>
+                    <p class="summary">Manual assessment of external systems and applications.</p>
+                    <p class="detail">Web, API, and infrastructure testing. Verified findings. Actionable fixes. No automation noise.</p>
                 </div>
                 <div class="card">
                     <span class="badge badge-live">LIVE NOW</span>
-                    <h3>Tactical Development</h3>
-                    <p>Secure web apps and tools built from commit one. Pre-launch code review + critical fixes. We know how to break it, so we build it right.</p>
+                    <h3>Threat Intel & Monitoring</h3>
+                    <p class="summary">Monitor for exposure and targeted threats.</p>
+                    <p class="detail">Track data leaks, impersonations, and adversarial activity related to your organization. Early warning.</p>
                 </div>
                 <div class="card">
                     <span class="badge badge-roadmap">COMING 2027</span>
-                    <h3>Field Operations</h3>
-                    <p>Cyber-physical security, licensed investigations, executive risk sweeps. Currently building PSIRA + PI credentials. Cyber intel available now.</p>
+                    <h3>Physical-Cyber Security & Investigations</h3>
+                    <p class="summary">Full-spectrum security operations. Not available until licensed.</p>
+                    <p class="detail">Service reserved for post-licensing. PSIRA and Private Investigation registration in progress per SAPS regulations. Will activate 2027. No physical or investigative operations offered until approved.</p>
                 </div>
             </div>
             <p class="disclaimer">
-                <strong>LEGAL NOTICE:</strong> Black Lotus currently operates as a cyber security and development firm. All services marked "LIVE NOW" are available. Services marked "COMING 2027" require PSIRA and PI licensing currently in progress. No physical security, close protection, or investigative services are offered until licensing is complete per SAPS regulations.
+                <strong>LEGAL NOTICE:</strong> All cyber operations require written authorization. Physical security and investigative services marked "COMING 2027" are reserved for future availability pending PSIRA and PI licensing. Not offered, solicited, or delivered before licensing.
             </p>
         </section>
 
         <section id="tools">
-            <h2>ACTIVE PROJECTS</h2>
+            <h2>INTERNAL TOOLING</h2>
             <div class="grid">
                 <div class="card">
                     <h3>LogWatch</h3>
-                    <p>Apache/Nginx log analysis. Flag anomalies in seconds. Flask backend.</p>
+                    <p>Internal tool for log anomaly detection. Used to support assessments.</p>
                 </div>
                 <div class="card">
                     <h3>SecCheck</h3>
-                    <p>Domain health scanner. DNS, SSL, headers. Python. Instant reports.</p>
+                    <p>Internal tool for domain configuration review. Used to support assessments.</p>
                 </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>ABOUT BLACK LOTUS</h2>
+            <div class="about-block">
+                <p><strong>Who we are:</strong> Johannesburg-based security operators. Authorized. Discreet. Technical.</p>
+                <p><strong>What we do:</strong> Red team operations, security assessments, and threat intelligence for organizations that take risk seriously.</p>
+                <p><strong>What we don’t do:</strong> No software development for clients. Tooling is internal only.</p>
+                <p><strong>2027:</strong> Physical security and investigative services pending PSIRA and PI licensing. Listed now for transparency.</p>
+                <p class="note">Client details and operational methods are never disclosed.</p>
             </div>
         </section>
 
         <section id="standards">
             <h2>STANDARDS</h2>
-            <p>All engagements require written authorization. No black-hat work. Ever.</p>
-            <p>Data encrypted at rest and transit. Proof deleted post-report. NDAs honored indefinitely.</p>
+            <p>Written authorization required for all engagements. No exceptions.</p>
+            <p>Data encrypted. Evidence destroyed post-delivery. NDAs honored indefinitely.</p>
             <a href="standards.html" class="btn-outline">Read Full ROE</a>
         </section>
 
@@ -84,7 +105,9 @@
 
     <footer>
         <p>© 2026 BLACK LOTUS. JOHANNESBURG, ZA</p>
-        <p class="disclaimer">Cyber operations live. Field operations launching 2027 post-licensing.</p>
+        <p class="disclaimer">Cyber operations active. Physical operations coming 2027 post-licensing.</p>
     </footer>
+
+    <script src="script.js?v=8"></script>
 </body>
 </html>
